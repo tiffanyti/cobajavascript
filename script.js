@@ -6,7 +6,7 @@ alert('first alert');
 alert('coba sekali lagi');
 
 var nama = prompt('namanya siapa?');
-alert(nama);
+alert(nama + ' ya');
 
 var tes = confirm('yakin?');
 
@@ -16,3 +16,15 @@ if ( tes == true ) {
 else {
 	alert('user cancel');
 }
+
+alert('tunggu');
+var lagi = true;
+
+while (lagi == true) {
+	var nama = prompt('namanya');
+	alert('halo ' + nama);
+
+	lagi = confirm('coba lagi?');
+}
+
+alert('terima kasih');
