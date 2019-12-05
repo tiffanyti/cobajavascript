@@ -42,15 +42,43 @@
 // 	nilaiAwal++;
 // }
 
-var jmlAngkot = 10;
-var angkotjalan = 6;
-var noangkot =1;
+// var jmlAngkot = 10;
+// var angkotjalan = 6;
+// var noangkot =1;
 
-while(noangkot<=angkotjalan) {
-	console.log ( 'angkot ' + noangkot + ' jalan');
-noangkot++;
+// while(noangkot<=angkotjalan) {
+// 	console.log ( 'angkot ' + noangkot + ' jalan');
+// noangkot++;
+// }
+
+// for(noangkot = angkotjalan+1; noangkot <= jmlAngkot; noangkot++) {
+// 	console.log ( 'angkot ' + noangkot + ' ga jalan');
+// }
+
+
+// var angka = 1;
+// if (angka == 1) {
+// 	alert ("anda 1");
+// }
+
+var angka = prompt('tulis angka');
+if (angka % 2 == 0) {
+	alert (angka + ' genap');
+} else if (angka % 2 == 1) {
+	alert (angka + ' ganjil');
+}else {
+	alert ( 'masukan angka!');
 }
 
-for(noangkot = angkotjalan+1; noangkot <= jmlAngkot; noangkot++) {
-	console.log ( 'angkot ' + noangkot + ' ga jalan');
-}
+
+// var noangkot=1;
+// var jmlAngkot =10;
+// var angkotjalan=6;
+
+// for (noangkot; noangkot<=jmlAngkot; noangkot++) {
+// 	if( noangkot<=angkotjalan ) {
+// 	console.log ("angkot jalan " + noangkot);
+// } else {
+// 	console.log ("angkot ga jalan " + noangkot);
+// }
+// }
