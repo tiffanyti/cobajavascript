@@ -61,24 +61,27 @@
 // 	alert ("anda 1");
 // }
 
-var angka = prompt('tulis angka');
-if (angka % 2 == 0) {
-	alert (angka + ' genap');
-} else if (angka % 2 == 1) {
-	alert (angka + ' ganjil');
-}else {
-	alert ( 'masukan angka!');
+// var angka = prompt('tulis angka');
+// if (angka % 2 == 0) {
+// 	alert (angka + ' genap');
+// } else if (angka % 2 == 1) {
+// 	alert (angka + ' ganjil');
+// }else {
+// 	alert ( 'masukan angka!');
+// }
+
+
+var noangkot=1;
+var jmlAngkot =10;
+var angkotjalan=6;
+var angkotlembur=8;
+
+for (noangkot; noangkot<=jmlAngkot; noangkot++) {
+	if( noangkot<=angkotjalan && noangkot !=5 ) {
+	console.log ("angkot jalan " + noangkot);
+} else if (noangkot==8 || noangkot==5) {
+	console.log ("angkotnya lembur " + noangkot);
+} else {
+	console.log ("angkot ga jalan " + noangkot);
 }
-
-
-// var noangkot=1;
-// var jmlAngkot =10;
-// var angkotjalan=6;
-
-// for (noangkot; noangkot<=jmlAngkot; noangkot++) {
-// 	if( noangkot<=angkotjalan ) {
-// 	console.log ("angkot jalan " + noangkot);
-// } else {
-// 	console.log ("angkot ga jalan " + noangkot);
-// }
-// }
+}
