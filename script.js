@@ -90,10 +90,12 @@ var item = prompt("nasi, roti, sayur, daging, atau boba?");
 
 switch (item) {
 	case 'nasi' :
+	case 'daging' :
 	alert("sama dongg");
 	break;
 
 	case 'roti':
+	case 'sayur' :
 	alert("kita beda :(") ;
 	break;
 
