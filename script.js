@@ -71,17 +71,38 @@
 // }
 
 
-var noangkot=1;
-var jmlAngkot =10;
-var angkotjalan=6;
-var angkotlembur=8;
+// var noangkot=1;
+// var jmlAngkot =10;
+// var angkotjalan=6;
+// var angkotlembur=8;
 
-for (noangkot; noangkot<=jmlAngkot; noangkot++) {
-	if( noangkot<=angkotjalan && noangkot !=5 ) {
-	console.log ("angkot jalan " + noangkot);
-} else if (noangkot==8 || noangkot==5) {
-	console.log ("angkotnya lembur " + noangkot);
-} else {
-	console.log ("angkot ga jalan " + noangkot);
+// for (noangkot; noangkot<=jmlAngkot; noangkot++) {
+// 	if( noangkot<=angkotjalan && noangkot !=5 ) {
+// 	console.log ("angkot jalan " + noangkot);
+// } else if (noangkot==8 || noangkot==5) {
+// 	console.log ("angkotnya lembur " + noangkot);
+// } else {
+// 	console.log ("angkot ga jalan " + noangkot);
+// }
+// }
+
+var item = prompt("nasi, roti, sayur, daging, atau boba?");
+
+switch (item) {
+	case 'nasi' :
+	alert("sama dongg");
+	break;
+
+	case 'roti':
+	alert("kita beda :(") ;
+	break;
+
+	case "boba":
+	alert("wah suka jg");
+	break;
+
+	default:
+	alert("apatu?");
+	break;
 }
-}
+
