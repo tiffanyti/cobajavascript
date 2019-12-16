@@ -43,14 +43,14 @@
 // console.log(campur[4][1]);
 
 
-//nambah array
-var arr = [];
-arr[0]=2;
-arr[1]=33;
-arr[2]=4;
-arr[3]=5;
+// //nambah array
+// var arr = [];
+// arr[0]=2;
+// arr[1]=33;
+// arr[2]=4;
+// arr[3]=5;
 
-console.log(arr[1]);
+// console.log(arr[1]);
 
 
 // // hapus array
@@ -80,6 +80,46 @@ console.log(arr[1]);
 // arr.splice(0,1,7);
 
 // var arr22= arr.slice(2,4);
+
+
+// foreach map
+// var angkaa = [1,2,3,4,5,6,7,8,9];
+// var namaa = ['yaya','aaki','ann', "mawn"];
+// // angkaa.forEach(function(e) {
+// // 	console.log(e);
+// // });
+
+// // namaa.forEach(function(e,i) {
+// // 	console.log("nomor " + (i+1) + ' : ' + e);
+// // })
+
+// var angkaa2 = angkaa.map(function(e) {
+// 	return e * 2;
+// });
+// console.log(angkaa2.join(' & '));
+
+
+//sort
+var angka3 = [1,2,10,4,50,18];
+angka3.sort(function(a,b) {
+	return a-b;
+});
+console.log(angka3.join(' - '));
+
+// filter & find
+var angka33 = angka3.filter(function(x) {
+	return x > 10;
+});
+console.log(angka33.join(' ^ '));
+
+
+var angka34 = angka3.find(function(x) {
+	return x < 10;
+});
+console.log(angka34);
+
+
+
 
 //  // join
 // console.log(arr.join("-"));
