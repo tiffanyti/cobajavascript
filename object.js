@@ -23,12 +23,8 @@ var mhs1 = {
 	}
 };
 
+
 // function declaration 
-var alamatt = {
-		jalan : "",
-		kota : "",
-		provinsi : ""
-	};
 
 function daftarmhsnya(nama,umur,sekolah,nomor,alamat) {
 	
@@ -36,41 +32,36 @@ function daftarmhsnya(nama,umur,sekolah,nomor,alamat) {
 	siswa.nama = nama;
 	siswa.umur = umur;
 	siswa.sekolah = sekolah;
-	siswa.nomor = [];
-	siswa.alamat = {
-		jalan : "",
-		kota : "",
-		provinsi : ""
+	siswa.nomor = nomor;
+	siswa.alamat =
+		this.jalan = jalan,
+		this.kota = kota,
+		this.provinsi = provinsi
 	}
 
 	return siswa;
 }
 
-var alamat3 = {
-		jalan : "jl.agbg",
-		kota : "jakarta",
-		provinsi : "palu"
-	};
+
+var mhs3 = daftarmhsnya( "あか" , "25" , "lulus" ,[3,4,5,6],["jl.agg" , "jakarta" , "palu"] );
 
 
-var mhs3 = daftarmhsnya( "あか" , "25" , "lulus" , );
-
-
-// concstructor
+// concstructor (nama harus huruf besar)
 function Mahasiswa(nama,umur,sekolah,nomor,alamat) {
-	this.nama = nama;
+	// var dan return udah otomatis kalo pake constructor
 	this.nama = nama;
 	this.umur = umur;
 	this.sekolah = sekolah;
-	this.nomor = [];
+	this.nomor = nomor;
 	this.alamat = {
-		jalan : "",
-		kota : "",
-		provinsi : ""
+		this.jalan = jalan,
+		this.kota = kota,
+		this.provinsi = provinsi
 	}
+
 }
 
-var mhs4 = new Mahasiswa("エリ" , "22" , "lulus" , );
+var mhs4 = new Mahasiswa("エリ" , "22" , "lulus" ,[3,4,5,6],["jl.agfg" , "jakarta" , "kupang"] );
 
 
 
