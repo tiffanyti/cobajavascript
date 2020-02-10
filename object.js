@@ -44,7 +44,7 @@ function daftarmhsnya(nama,umur,sekolah,nomor,alamat) {
 }
 
 
-var mhs3 = daftarmhsnya("あか", "25","lulus",[45,100,200,100],["jl.agg","jakarta" ,"palu"]);
+var mhs3 = daftarmhsnya("あか", "25","lulus",[3,2,5,4],["jl.agg","jakarta" ,"palu"]);
 
 
 // // constructor (nama harus huruf besar)
@@ -60,27 +60,31 @@ function Mahasiswa(nama,umur,sekolah,nomor,alamat) {
 	this.alamat.kota = alamat[1];
 	this.alamat.provinsi = alamat[2];
 
-
-
-function Car(nama,umur,sekolah,nomor,alamat) {
-
-	// var dan return udah otomatis kalo pake constructor
-	this.nama = nama;
-	this.umur = umur;
-	this.sekolah = sekolah;
-	this.nomor = nomor;
-	this.alamat = {};
-	this.alamat.jalan = alamat[0];
-	this.alamat.kota = alamat[1];
-	this.alamat.provinsi = alamat[2];
-
-}
 var mhs4 = new Mahasiswa("エリ" , "22" , "lulus" ,[3,4,5,6],["jl.agfg" , "jakarta" , "kupang"] );
+	
 
-var new_car = new car(); // call new class constructor
+	
+// 	//coba hal lain
 
-new_car.add_car('toyota','red','MT');
-new_car.color = 'blue';
+// function Car(nama,umur,sekolah,nomor,alamat) {
+
+// 	// var dan return udah otomatis kalo pake constructor
+// 	this.nama = nama;
+// 	this.umur = umur;
+// 	this.sekolah = sekolah;
+// 	this.nomor = nomor;
+// 	this.alamat = {};
+// 	this.alamat.jalan = alamat[0];
+// 	this.alamat.kota = alamat[1];
+// 	this.alamat.provinsi = alamat[2];
+
+// }
+
+
+// var new_car = new car(); // call new class constructor
+
+// new_car.add_car('toyota','red','MT');
+// new_car.color = 'blue';
 
 
 
